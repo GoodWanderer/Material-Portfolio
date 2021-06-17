@@ -1,22 +1,22 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'FiraSans';
-  src: url("../fonts/FiraSans-Bold.eot");
-  src: local("вє"), url("../fonts/FiraSans-Bold.woff") format("woff"), url("../fonts/FiraSans-Bold.ttf") format("truetype"), url("../fonts/FiraSans-Bold.svg") format("svg");
+  src: url("./fonts/FiraSans-Bold.eot");
+  src: local("вє"), url("./fonts/FiraSans-Bold.woff") format("woff"), url("./fonts/FiraSans-Bold.ttf") format("truetype"), url("./fonts/FiraSans-Bold.svg") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'FiraSans';
   src: url("../fonts/FiraSans-Book.eot");
-  src: local("вє"), url("../fonts/FiraSans-Book.woff") format("woff"), url("../fonts/FiraSans-Book.ttf") format("truetype"), url("../fonts/FiraSans-Book.svg") format("svg");
+  src: local("вє"), url("./fonts/FiraSans-Book.woff") format("woff"), url("./fonts/FiraSans-Book.ttf") format("truetype"), url("./fonts/FiraSans-Book.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'GothamPro';
-  src: url("../fonts/GothaProNarBol.eot");
-  src: local("вє"), url("../fonts/GothaProNarBol.woff") format("woff"), url("../fonts/GothaProNarBol.ttf") format("truetype"), url("../fonts/GothaProNarBol.svg") format("svg");
+  src: url("./fonts/GothaProNarBol.eot");
+  src: local("вє"), url("./fonts/GothaProNarBol.woff") format("woff"), url("./fonts/GothaProNarBol.ttf") format("truetype"), url("./fonts/GothaProNarBol.svg") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -208,7 +208,7 @@ body {
 
 .start {
   position: relative;
-  background: url("../img/start/bg.jpg") center/cover no-repeat;
+  background: url("./img/start/bg.jpg") center/cover no-repeat;
   padding: 188px 10px 49px; }
   .start__block {
     max-width: 799px;
@@ -429,10 +429,10 @@ body {
 
 .work {
   position: relative;
-  background: url("../img/work/bg.jpg") center/cover no-repeat; }
+  background: url("./img/work/bg.jpg") center/cover no-repeat; }
   @media (max-width: 991.98px) {
     .work {
-      background: url("../img/work/bg.jpg") 0 0/cover no-repeat;
+      background: url("./img/work/bg.jpg") 0 0/cover no-repeat;
       background-size: 200% 100%; } }
   @media (max-width: 700px) {
     .work {
@@ -494,10 +494,10 @@ body {
 
 .work-2 {
   position: relative;
-  background: url("../img/work-2/bg.jpg") center/cover no-repeat; }
+  background: url("./img/work-2/bg.jpg") center/cover no-repeat; }
   @media (max-width: 991.98px) {
     .work-2 {
-      background: url("../img/work-2/bg.jpg") 100% 100%/cover no-repeat;
+      background: url("./img/work-2/bg.jpg") 100% 100%/cover no-repeat;
       background-size: 200% 100%; } }
   @media (max-width: 700px) {
     .work-2 {
@@ -559,10 +559,10 @@ body {
 
 .work-3 {
   position: relative;
-  background: url("../img/work-3/bg.jpg") center/cover no-repeat; }
+  background: url("./img/work-3/bg.jpg") center/cover no-repeat; }
   @media (max-width: 991.98px) {
     .work-3 {
-      background: url("../img/work-3/bg.jpg") 0 0/cover no-repeat;
+      background: url("./img/work-3/bg.jpg") 0 0/cover no-repeat;
       background-size: 200% 100%; } }
   @media (max-width: 700px) {
     .work-3 {
@@ -624,10 +624,10 @@ body {
 
 .work-4 {
   position: relative;
-  background: url("../img/work-4/bg.jpg") center/cover no-repeat; }
+  background: url("./img/work-4/bg.jpg") center/cover no-repeat; }
   @media (max-width: 991.98px) {
     .work-4 {
-      background: url("../img/work-4/bg.jpg") 100% 100%/cover no-repeat;
+      background: url("./img/work-4/bg.jpg") 100% 100%/cover no-repeat;
       background-size: 200% 100%; } }
   @media (max-width: 700px) {
     .work-4 {
@@ -682,7 +682,7 @@ body {
 
 .question {
   position: relative;
-  background: url("../img/question/bg.jpg") center/cover no-repeat;
+  background: url("./img/question/bg.jpg") center/cover no-repeat;
   padding: 49px 0 68px; }
   .question__title {
     color: #ffffff; }
