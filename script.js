@@ -59,7 +59,7 @@ try {
     else timer = setTimeout(countdown, 1000);
 }
 
-} catch (err) {
+} catch () {
 
   err();
 
