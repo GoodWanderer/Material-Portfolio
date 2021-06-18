@@ -21,7 +21,49 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function() {
 
 
-console.log("Hello world"); 
+const t = 1727999;
+let k = localStorage.getItem('sec');
+if (localStorage.getItem('sec') == null) {
+  k = t;
+  const k2 = Math.floor(new Date().getTime() / 1000) + k;
+  localStorage.setItem('sec', k2);
+} else {
+  k = k - Math.floor(new Date().getTime() / 1000);
+}
+
+function err() {
+  elem = document.querySelector('.stock-start__timer');
+  elem.innerHTML = '<div style="color: #fffc;">Ошибка! Обратить к администрации</div>';
+}
+
+if (k > t || k < 0) {
+  err();
+}
+
+try {
+
+  let timer;
+  countdown();
+
+  function countdown(){ 
+    let d = Math.floor(k / 3600 / 24),
+    h = Math.floor(k / 3600 % 24),
+    m = Math.floor(k % 3600 / 60),
+    s = Math.floor( k % 60 );
+    document.getElementById('days').innerHTML = (d < 10) ? `0${d}`: d;
+    document.getElementById('hours').innerHTML = (h < 10) ? `0${h}`: h;
+    document.getElementById('minutes').innerHTML = (m < 10) ? `0${m}`: m;
+    document.getElementById('seconds').innerHTML = (s < 10) ? `0${s}`: s;
+    k--;
+    if (k<0)clearTimeout(timer);
+    else timer = setTimeout(countdown, 1000);
+}
+
+} catch (err) {
+
+  err();
+
+}
 
 /***/ })
 
