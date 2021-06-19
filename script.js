@@ -25,7 +25,6 @@ __webpack_require__.r(__webpack_exports__);
 const t = 1727999;
 let k = localStorage.getItem('sec');
 if (localStorage.getItem('sec') == null) {
-  console.log(1);
   k = t;
   const k2 = Math.floor(new Date().getTime() / 1000) + k;
   localStorage.setItem('sec', k2);
@@ -37,19 +36,16 @@ function err(e) {
   elem = document.querySelector('.stock-start__timer');
   elem.innerHTML = '<div style="color: #fffc;">Ошибка! Обратить к администрации</div>';
   console.log(e);
-  console.log(1);
 }
 
 if (k > t || k < 0) {
   err(e);
-  console.log(2);
 }
 
 try {
 
-  let timer;
+  let t;
   countdown();
-  console.log(3);
   function countdown(){ 
     let d = Math.floor(k / 3600 / 24),
     h = Math.floor(k / 3600 % 24),
@@ -60,12 +56,11 @@ try {
     document.getElementById('minutes').innerHTML = (m < 10) ? `0${m}`: m;
     document.getElementById('seconds').innerHTML = (s < 10) ? `0${s}`: s;
     k--;
-    if (k<0)clearTimeout(timer);
-    else timer = setTimeout(countdown, 1000);
+    if (k<0)clearTimeout(t);
+    else t = setTimeout(countdown, 1000);
 }
 
 } catch (e) {
-  console.log(4);
   err(e);
 
 }
