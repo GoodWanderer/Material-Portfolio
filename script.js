@@ -44,7 +44,7 @@ if (k > t || k < 0) {
 
 try {
 
-  let t;
+  let tm;
   countdown();
   function countdown(){ 
     let d = Math.floor(k / 3600 / 24),
@@ -56,8 +56,8 @@ try {
     document.getElementById('minutes').innerHTML = (m < 10) ? `0${m}`: m;
     document.getElementById('seconds').innerHTML = (s < 10) ? `0${s}`: s;
     k--;
-    if (k<0)clearTimeout(t);
-    else t = setTimeout(countdown, 1000);
+    if (k<=0)clearTimeout(tm);
+    else tm = setTimeout(countdown, 1000);
 }
 
 } catch (e) {
