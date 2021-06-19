@@ -31,13 +31,14 @@ if (localStorage.getItem('sec') == null) {
   k = k - Math.floor(new Date().getTime() / 1000);
 }
 
-function err() {
+function err(e) {
   elem = document.querySelector('.stock-start__timer');
   elem.innerHTML = '<div style="color: #fffc;">Ошибка! Обратить к администрации</div>';
+  console.log(e);
 }
 
 if (k > t || k < 0) {
-  err();
+  err(e);
 }
 
 try {
@@ -61,7 +62,7 @@ try {
 
 } catch (e) {
 
-  err();
+  err(e);
 
 }
 
