@@ -21,6 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function() {
 
 
+
 const t = 1727999;
 let k = localStorage.getItem('sec');
 if (localStorage.getItem('sec') == null) {
@@ -31,14 +32,14 @@ if (localStorage.getItem('sec') == null) {
   k = k - Math.floor(new Date().getTime() / 1000);
 }
 
-function err(e) {
+function err() {
   elem = document.querySelector('.stock-start__timer');
   elem.innerHTML = '<div style="color: #fffc;">Ошибка! Обратить к администрации</div>';
-  console.log(e);
 }
 
 if (k > t || k < 0) {
   err(e);
+  console.log(e);
 }
 
 try {
